@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIBotics 2020 Go-Digital Series</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/AIBotics_Favicon.png">
+</head>
+<body>
+  <!-- Top Navbar -->
+  <div class="gradient">
+    <div id="navbar-container"></div>
+  </div>
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-container").innerHTML = data;
+      });
+  </script>
+
+  <!-- Hero Section -->
+  <section class="header gradient text-white py-5">
+    <div class="container text-center">
+      <h1 class="display-2 fw-bold mb-3">AIBotics 2020 Go-Digital Series</h1>
+      
+      <div class="bg-white bg-opacity-10 rounded-3 px-4 py-3 d-inline-block mb-4">
+        <h5 class="fw-semibold mb-1">Theme:</h5>
+        <p class="mb-0 fs-5">"Augmenting Human Potential"</p>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center gap-2 mt-3">
+        <img src="assets/calendar_w.svg" alt="Date" width="24" height="24">
+        <small class="fs-6">6 August - 19 November 2020, virtual</small>
+      </div>
+    </div>
+  </section>
+
+  <svg viewBox="0 0 1440 150" preserveAspectRatio="none" style="display:block;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="aiboticsGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#d3701f" />
+        <stop offset="100%" stop-color="#c91648" />
+      </linearGradient>
+    </defs>
+    <path d="M0,150 L720,0 L1440,150 L1440,0 L0,0 Z" fill="url(#aiboticsGradient)"></path>
+  </svg>
+
+  <section class="py-5">
+    <div class="container rounded">
+      <h2 class="text-center fw-bold mb-5">AIBotics 2020 Webinar Series</h2>
+
+      <!-- Webinar Block 1 -->
+      <div class="row align-items-center g-4 mb-4 p-4">
+        <div class="col-md-6 text-center order-1 order-md-1">
+          <img src="assets/past_events/go_digital_2020/aib-2020-graphic-webinar-1.svg" alt="Human-Machine Collaboration" class="img-fluid rounded" style="max-height: 400px;">
+        </div>
+        <div class="col-md-6 px-5 order-2 order-md-2">
+          <small class="text-muted">6 August 2020 | Webinar Code: 0806-HMC</small>
+          <h3 class="fw-bold mt-2">Human-Machine Collaboration</h3>
+          <ul class="ps-3 mb-3">
+            <li>Breakthrough research and innovations in enhancing man-machine interfaces</li>
+            <li>Applications of artificial intelligence and robotic technologies beyond industrial robots, integrating deep tech</li>
+          </ul>
+          <div class="d-flex gap-2">
+            <a href="https://youtube.com/playlist?list=PLbfJFIFDkVKc9y8Lm6MeC1lT_BeZsg1_P&si=rWtNQ56ZScN7TtzF" class="btn btn-lg gradient btn-gradient" style="border: none;">Watch Again</a>
+            <a href="assets/past_events/go_digital_2020/AIB_Webinar_EDM_2020_1-compressed.pdf" class="btn btn-lg btn-outline-primary btn-gradient">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Webinar Block 2 -->
+      <div class="row align-items-center g-4 mb-4 p-4">
+        <div class="col-md-6 px-5 order-2 order-md-1">
+          <small class="text-muted">20 August 2020 | Webinar Code: 0820-AISC</small>
+          <h3 class="fw-bold mt-2">Applying AI in Smart Cities</h3>
+          <ul class="ps-3 mb-3">
+            <li>Essential considerations for the deployment of AI & robotics in smart cities and infrastructural planning</li>
+            <li>Engaging topics on innovations in autonomous mobility and security</li>
+          </ul>
+          <div class="d-flex gap-2">
+            <a href="https://youtube.com/playlist?list=PLbfJFIFDkVKfZxuKDMKo_csUPFxrnhq0h&si=6xYzeto9rjyx6BYe" class="btn btn-lg gradient btn-gradient" style="border: none;">Watch Again</a>
+            <a href="assets/past_events/go_digital_2020/AIB_Webinar_EDM_2020_2-compressed.pdf" class="btn btn-lg btn-outline-primary btn-gradient">Learn More</a>
+          </div>
+        </div>
+        
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <img src="assets/past_events/go_digital_2020/aib-2020-graphic-webinar-2.svg" alt="Applying AI in Smart Cities" class="img-fluid rounded" style="max-height: 400px;">
+        </div>
+
+      </div>
+
+      <!-- Webinar Block 3 -->
+      <div class="row align-items-center g-4 mb-4 p-4">
+        <div class="col-md-6 text-center order-1 order-md-1">
+          <img src="assets/past_events/go_digital_2020/aib-2020-graphic-webinar-3.svg" alt="Future of Skills" class="img-fluid rounded" style="max-height: 400px;">
+        </div>
+        <div class="col-md-6 px-5 order-2 order-md-1">
+          <small class="text-muted">3 September 2020 | Webinar Code: 0903-AIED</small>
+          <h3 class="fw-bold mt-2">Intelligent Edge Devices</h3>
+          <ul class="ps-3 mb-3">
+            <li>Discussions on processing of data close to collection point & allowing systems to make operational decisions</li>
+            <li>Low power plug-in to accelerate deep learning inference on the edge</li>
+            <li>Understanding Edge AI Inference Systems to deliver high performance & fast responsiveness for real-time intelligence</li>
+          </ul>
+          <div class="d-flex gap-2">
+            <a href="https://youtube.com/playlist?list=PLbfJFIFDkVKfX58Xgf0mXcTe4EG8rCC6E&si=zg71VyOJF8kb2gwI" class="btn btn-lg gradient btn-gradient" style="border: none;">Watch Again</a>
+            <a href="assets/past_events/go_digital_2020/AIB_Webinar_EDM_2020_3-compressed.pdf" class="btn btn-lg btn-outline-primary btn-gradient">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Webinar Block 4 -->
+      <div class="row align-items-center g-4 mb-4 p-4">
+        <div class="col-md-6 px-5 order-2 order-md-2">
+          <small class="text-muted">17 September 2020 | Webinar Code: 0917-ERAI</small>
+          <h3 class="fw-bold mt-2">Ethical and Responsible AI</h3>
+          <ul class="ps-3 mb-3">
+            <li>Ethical considerations for the deployment of robotics and AI</li>
+            <li>Governance, Executive toolkits, Ethical Developers and AI Audits</li>
+            <li>Explainability and ethical black boxes</li>
+          </ul>
+          <div class="d-flex gap-2">
+            <a href="https://youtube.com/playlist?list=PLbfJFIFDkVKftTbTo6s6rHtAgzmxBiKif&si=R_ubretiudTgq4RE" class="btn btn-lg gradient btn-gradient" style="border: none;">Watch Again</a>
+            <a href="assets/past_events/go_digital_2020/AIB_Webinar_EDM_2020_4-compressed.pdf" class="btn btn-lg btn-outline-primary btn-gradient">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <img src="assets/past_events/go_digital_2020/aib-2020-graphic-webinar-4.svg" alt="Future of Skills" class="img-fluid rounded" style="max-height: 400px;">
+        </div>
+
+      </div>
+
+      <!-- Webinar Block 5 -->
+      <div class="row align-items-center g-4 mb-4 p-4">
+        <div class="col-md-6 text-center order-1 order-md-1">
+          <img src="assets/past_events/go_digital_2020/aib-2020-graphic-webinar-5.svg" alt="Ethical and Responsible AI" class="img-fluid rounded" style="max-height: 400px;">
+        </div>
+        <div class="col-md-6 px-5 order-2 order-md-1">
+          <small class="text-muted">1 October 2020 | Webinar Code: 1001-DWF</small>
+          <h3 class="fw-bold mt-2">Digital Workforce</h3>
+          <ul class="ps-3 mb-3">
+            <li>Knowledge on the Future of Work to determine the Future of Education, as well as assistive learning models</li>
+            <li>Impact on digital technology on our Daily Lives at Home and at Work</li>
+            <li>Technology co-habitation</li>
+          </ul>
+          <div class="d-flex gap-2">
+            <a href="https://youtube.com/playlist?list=PLbfJFIFDkVKc49wJxQoY0A9Arl1EbWoMy&si=k7aEOavF3DjjHErz" class="btn btn-lg gradient btn-gradient" style="border: none;">Watch Again</a>
+            <a href="assets/past_events/go_digital_2020/AIB_Webinar_EDM_2020_5-compressed.pdf" class="btn btn-lg btn-outline-primary btn-gradient">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Webinar Block 6 -->
+      <div class="row align-items-center g-4 mb-4 p-4">
+        <div class="col-md-6 px-5 order-2 order-md-1">
+          <small class="text-muted">15 October 2020 | Webinar Code: 1015-AICR</small>
+          <h3 class="fw-bold mt-2">AI in Collaborative Retail</h3>
+          <ul class="ps-3 mb-3">
+            <li>Use of technologies to ensure safety and abundant supply to meet growing demands and personalized consumerism</li>
+            <li>Robotics applications in the Supply Chain, from leaving the factory to delivery to the customer doorsteps</li>
+          </ul>
+          <div class="d-flex gap-2">
+            <a href="https://youtube.com/playlist?list=PLbfJFIFDkVKepC_1nP1vTzVv1P2PnvlvS&si=ZX7yN1xN_yrP6u1V" class="btn btn-lg gradient btn-gradient" style="border: none;">Watch Again</a>
+            <a href="assets/past_events/go_digital_2020/AIB_Webinar_EDM_2020_6-compressed.pdf" class="btn btn-lg btn-outline-primary btn-gradient">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <img src="assets/past_events/go_digital_2020/aib-2020-graphic-webinar-6.svg" alt="Digital Workforce" class="img-fluid rounded" style="max-height: 400px;">
+        </div>
+      </div>
+
+      <!-- Webinar Block 7 -->
+      <div class="row align-items-center g-4 mb-4 p-4">
+        <div class="col-md-6 text-center order-1 order-md-1">
+          <img src="assets/past_events/go_digital_2020/aib-2020-graphic-webinar-7.svg" alt="Community and Digital Care" class="img-fluid rounded" style="max-height: 400px;">
+        </div>
+        <div class="col-md-6 px-5 order-2 order-md-2">
+          <small class="text-muted">5 November 2020 | Webinar Code: 1105-CDC</small>
+          <h3 class="fw-bold mt-2">Community and Digital Care</h3>
+          <ul class="ps-3 mb-3">
+            <li>Technology to enhance active ageing / community care, immersive apps to bridge generation gaps</li>
+            <li>Digital health and how technology is re-inventing conventional care models post CoVID-19</li>
+          </ul>
+          <div class="d-flex gap-2">
+            <a href="https://youtube.com/playlist?list=PLbfJFIFDkVKcfYEJZgT23vzqxG5iCl5JR&si=n0OBp0ss8bYMNElW" class="btn btn-lg gradient btn-gradient" style="border: none;">Watch Again</a>
+            <a href="assets/past_events/go_digital_2020/AIB_Webinar_EDM_2020_7-compressed.pdf" class="btn btn-lg btn-outline-primary btn-gradient">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Webinar Block 8 -->
+      <div class="row align-items-center g-4 mb-4 p-4">
+        <div class="col-md-6 px-5 order-2 order-md-1">
+          <small class="text-muted">19 November 2020 | Webinar Code: 1119-AIRI</small>
+          <h3 class="fw-bold mt-2">AI & Robotics Innovations</h3>
+          <ul class="ps-3 mb-3">
+            <li>Deep discussions around technologies which help humans to adapt around complex tasks</li>
+            <li>A peek into future technologies and proposals to humanized technology</li>
+          </ul>
+          <div class="d-flex gap-2">
+            <a href="https://youtube.com/playlist?list=PLbfJFIFDkVKfaz5ubz-kiG1oOnUlgZ9xF&si=LNVaIaYhyML9gcb6" class="btn btn-lg gradient btn-gradient" style="border: none;">Watch Again</a>
+            <a href="assets/past_events/go_digital_2020/AIB_Webinar_EDM_2020_8-compressed.pdf" class="btn btn-lg btn-outline-primary btn-gradient">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-6 text-center order-1 order-md-2">
+          <img src="assets/past_events/go_digital_2020/aib-2020-graphic-webinar-8.svg" alt="AI & Robotics Innovations" class="img-fluid rounded" style="max-height: 400px;">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Video Content -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Event Videos</h2>
+      <h5 class="text-center mb-5">Relive the highlights from AIBotics 2020 through our official event recordings</h5>
+
+      <div class="bg-white p-4 rounded shadow-sm">
+
+        <!-- Video 1 -->
+        <div class="fade show ">
+          <div class="ratio ratio-16x9 mb-3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GMR4oOmPR2E?si=QM81fk2bDOi-wMKD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h5 class="fw-bold">AIBotics 2020 Go-Digital Series</h5>
+          <p class="mb-1"><img src="assets/calendar.svg" width="18" class="me-1"> Aug - Nov, 2020</p>
+          <p>AIBotics 2020 Go-Digital Series - Exploring ethical AI and robotics technologies for a better world. This virtual conference series brought together experts to discuss how AI and robotics can augment human potential.</p>
+          <a href="https://youtu.be/GMR4oOmPR2E?si=QM81fk2bDOi-wMKD" target="_blank" class="btn btn-sm btn-secondary d-inline-flex align-items-center gap-1" style="font-size: 1rem;">
+            Watch on YouTube <img src="assets/external-link.svg" width="18" alt="external link">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-container").innerHTML = data;
+      });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

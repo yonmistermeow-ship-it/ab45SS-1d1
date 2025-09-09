@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIBotics 2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/AIBotics_Favicon.png">
+</head>
+<body>
+  <!-- Top Navbar -->
+  <div class="gradient">
+    <div id="navbar-container"></div>
+  </div>
+  <script>
+    fetch("navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-container").innerHTML = data;
+      });
+  </script>
+
+  <!-- Hero Section -->
+  <section class="header gradient text-white py-5">
+    <div class="container text-center">
+      <h1 class="display-2 fw-bold mb-3">AIBotics 2025</h1>
+      <p class="lead fs-4 mb-4">AI in Robotics</p>
+      
+      <div class="bg-white bg-opacity-10 rounded-3 px-4 py-3 d-inline-block mb-4">
+        <p class="mb-0 fs-5">A global conference and exhibition reviewing ethical <br>and responsible AI and Robotic innovations</p>
+      </div>
+    </div>
+  </section>
+
+
+  <svg viewBox="0 0 1440 150" preserveAspectRatio="none" style="display:block;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="aiboticsGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#d3701f" />
+        <stop offset="100%" stop-color="#c91648" />
+      </linearGradient>
+    </defs>
+    <path d="M0,150 L720,0 L1440,150 L1440,0 L0,0 Z" fill="url(#aiboticsGradient)"></path>
+  </svg>
+
+  <!-- Exhibition Section -->
+  <section class="py-5 ">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">The Exhibition</h2>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <p class="lead">
+            AI &Robotic technologies have made our lives easier in multiple ways. We can accessmultiple benefits right through our smartphones with the power of digital assistants like Google Assistant, Siri, Alexa, as well as smart machines andsocial robots. In today’s world, multiple industries such as healthcare, e-commerce, financial services, etc., are leveraging the benefits of AI to the fullest of its potential. The technology has helped businesses grow in leaps and bounds with improved quality, security, and efficiency.
+          </p>
+          <p>
+            Due to the complex challenges that the various industry face, the growth in the industryis severely limited. Since 2023, AIBotics as a conference has been brought closer to the local audiences.  Together with our local partners, AIBotics has been collocated in Singapore, Thailand, Philippines, China and Korea.  We believe that in this approach, we can bring an exchange of expertise closer to the local audience and motivate greater thought innovation and address more comprehensive issues locally.
+          </p>
+          <p class="fw-semibold">
+            Watch out for the schedule of our local partner events on AIBotics @ Partner Events!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Augmenting Human Potential Section -->
+  <section class="py-5 bg-white">
+    <div class="container" style="max-width: 1000px;">
+      <h2 class="text-center fw-bold mb-5">Augmenting Human Potential</h2>
+      <p class="text-center lead mb-5">
+        AI has the potential to significantly increase human capabilities in the following ways:
+      </p>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+
+        <!-- Card 1: Decision Support -->
+        <div class="col">
+          <div class="d-flex align-items-start gap-3">
+            <div>
+              <h5 class="fw-bold">Providing Decision Support</h5>
+              <p class="mb-0">AI can evaluate enormous datasets and offer useful insights, assisting people in making better decisions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Improving Learning -->
+        <div class="col">
+          <div class="d-flex align-items-start gap-3">
+            <div>
+              <h5 class="fw-bold">Improving Learning Experiences</h5>
+              <p class="mb-0">AI-powered platforms provide individualized instruction tailored to each learner’s needs and preferences.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Enhancing Creativity -->
+        <div class="col">
+          <div class="d-flex align-items-start gap-3">
+            <div>
+              <h5 class="fw-bold">Enhancing Creativity</h5>
+              <p class="mb-0">By generating ideas and prototypes, AI supports creative work, allowing humans to focus on higher-order thinking.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Increasing Productivity -->
+        <div class="col">
+          <div class="d-flex align-items-start gap-3">
+            <div>
+              <h5 class="fw-bold">Increasing Productivity</h5>
+              <p class="mb-0">Employees can dedicate more time to strategic initiatives by automating repetitive tasks with AI.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Videos Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Highlights & Interviews</h2>
+
+      <div class="rounded shadow-lg overflow-hidden" style="background-color: #f8f9fa;">
+        <div class="row g-0">
+
+          <!-- Sidebar -->
+          <div class="col-md-3 p-3 border-end bg-white">
+            <div class="d-grid gap-2" id="video-tab-buttons" role="tablist">
+              <button class="btn btn-light text-start active" id="tab-btn-1" data-bs-toggle="tab" data-bs-target="#video1" type="button">1. Welcome Message</button>
+              <button class="btn btn-light text-start" id="tab-btn-2" data-bs-toggle="tab" data-bs-target="#video2" type="button">2. Introduction & Motivation for AI in Robotics</button>
+              <button class="btn btn-light text-start" id="tab-btn-3" data-bs-toggle="tab" data-bs-target="#video3" type="button">3. Innovating Construction Work Method</button>
+              <button class="btn btn-light text-start" id="tab-btn-4" data-bs-toggle="tab" data-bs-target="#video4" type="button">4. Leaveraging AI in the Construction Space</button>
+              <button class="btn btn-light text-start" id="tab-btn-5" data-bs-toggle="tab" data-bs-target="#video5" type="button">5. The Challenges and Oppotunities for Robotics & Automation in Construction</button>
+              <button class="btn btn-light text-start" id="tab-btn-6" data-bs-toggle="tab" data-bs-target="#video6" type="button">6. Competency for Digital Construction</button>
+              <button class="btn btn-light text-start" id="tab-btn-7" data-bs-toggle="tab" data-bs-target="#video7" type="button">7. Economics of AI & Robotics in Consturction Sector</button>
+              <button class="btn btn-light text-start" id="tab-btn-8" data-bs-toggle="tab" data-bs-target="#video8" type="button">8. Panel Discussion</button>
+            </div>
+          </div>
+
+          <!-- Main Video Display -->
+          <div class="col-md-9 p-4">
+            <div class="tab-content">
+
+              <div class="tab-pane fade show active" id="video1">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/5Yqut7CKTf8?si=VFkZLaqGb6ZaAW6_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="mt-3 text-muted">Welcome Message by Elle Quan</p>
+              </div>
+
+              <div class="tab-pane fade" id="video2">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/CSHL-o9hLuI?si=FkgO9hfxP_NUVvpa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="mt-3 text-muted">Introduction & Motivation for AI in Robotics by Oliver Tian</p>
+              </div>
+
+              <div class="tab-pane fade" id="video3">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/VR2LXjUXsu8?si=RiN8N-NOtKy6nuUa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="mt-3 text-muted">Innovating Construction Work Method by Soungho Chae</p>
+              </div>
+
+              <div class="tab-pane fade" id="video4">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/hZAMGDhUHx4?si=0aY7phPfk-yXHqIH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="mt-3 text-muted">Leaveraging AI in the Construction Space by Daryl Chew</p>
+              </div>
+
+              <div class="tab-pane fade" id="video5">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/PELQ8L-Jqdg?si=y7DwIvuMzyBYs9ju" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="mt-3 text-muted">The Challenges and Oppotunities for Robotics & Automation in Construction by Hajime Onojima</p>
+              </div>
+
+              <div class="tab-pane fade" id="video6">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/PkjDKEUNsgU?si=M92_6XEunJ_vh632" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="mt-3 text-muted">Competency for Digital Construction by Alisa Koniukhovskaia</p>
+              </div>
+
+              <div class="tab-pane fade" id="video7">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/luP_I5a7AIE?si=0T1J2Dd3qlfoG8kA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="mt-3 text-muted">Economics of AI & Robotics in Consturction Sector by Justin Chan</p>
+              </div>
+
+              <div class="tab-pane fade" id="video8">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/bJS94khSA-g?si=w1uUcJwCCbgOxtmY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <p class="mt-3 text-muted">Panel Discussion Moderated by Oliver Tian</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-container").innerHTML = data;
+      });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

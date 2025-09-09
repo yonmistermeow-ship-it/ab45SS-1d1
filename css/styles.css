@@ -1,0 +1,340 @@
+/* Common navbar styling */
+.custom-navbar {
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.fade-in-on-load {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-on-load.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-gradient {
+  opacity: 0.9;
+}
+
+.btn-gradient:hover {
+  opacity: 1;
+  color: white;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+/* For large screens only */
+@media (min-width: 992px) {
+  .custom-navbar {
+    background-color: transparent; /* remove full bar */
+  }
+
+  .custom-navbar .inner-navbar {
+    background: white;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 1rem 2rem;
+  }
+}
+
+/* For small screens (mobile) */
+@media (max-width: 991.98px) {
+  .custom-navbar {
+    background-color: white;
+    border-radius: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+
+  .custom-navbar .inner-navbar {
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    box-shadow: none;
+  }
+}
+
+#aiboticsCarousel {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.carousel-inner img {
+  max-height: 650px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+.navbar-nav .nav-link {
+font-size: 1.2rem; /* Adjust as needed (e.g., 0.9rem, 18px, etc.) */
+}
+
+.navbar-brand {
+font-size: 1.7rem; /* This controls the brand text size */
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.gradient{
+  background: linear-gradient(90deg, #d3701f, #c91648);
+  color: white;
+}
+
+.header {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.custom-hero-text {
+  font-size: 1.9rem; /* Adjust as needed */
+  line-height: 1.6;
+}
+
+.footer {
+  font-size: 0.95rem; /* Or any value like 14px, 1rem, etc. */
+  background-color: #2f4858;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer h6 {
+  font-size: 1.1rem;
+}
+
+body h2{
+  font-size: 2.5rem;
+}
+
+p.lead{
+  font-size: 1.4rem;
+}
+
+#who-should-attend img{
+  width: 50px;
+}
+
+#who-should-attend h6{
+  font-size: 1.5rem;
+}
+
+
+.bg-light-orange {
+  background-color: #fff1e8; /* Light orange tone from #F58125 */
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Initial card styling */
+#homecard.card {
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+/* On hover: show border and slight elevation */
+#homecard.card:hover {
+  border: 2px solid #F58125; /* Use your brand color */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  background-color: rgb(247, 247, 247);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#eventcard.card-hover:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+
+/* Optional: Smooth icon scaling on hover */
+#homecard.card:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.panel-card {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.panel-card:not(.active) {
+  opacity: 0.4;
+  filter: grayscale(70%);
+  transform: scale(0.90);
+  pointer-events: none;
+}
+
+.panel-card.active {
+  opacity: 1;
+  filter: none;
+  z-index: 1;
+}
+
+/* On small screens, just hide the cards that aren't active */
+@media (max-width: 576px) {
+  .panel-card {
+    display: none !important;
+  }
+
+  .panel-card.active {
+    display: block !important;
+    opacity: 1 !important;
+    filter: none !important;
+    transform: none !important;
+  }
+}
+
+.circular-card {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s ease;
+  background: rgba(167, 167, 167, 0.65);
+  box-shadow: none;
+  border: 1px solid #c9c9c9;
+}
+
+.avsbrd {
+  font-size: 1.25rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  background-color: #f8f9fa; /* Light gray background (Bootstrap-like) */
+  color: #000;               /* Optional: black text */
+  border-color: #6d6e70;     /* Optional: light border */
+}
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+  .avsbrd {
+    font-size: 1rem;
+    padding: 0.45rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .avsbrd {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.avsbrd:hover {
+  background-color: #212529; /* Darker background on hover */
+  color: #fff;               /* White text on hover */
+}
+
+canvas {
+  pointer-events: none;
+}
+
+.circular-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.circular-card h6,
+.circular-card small {
+  margin: 4px 0;
+}
+
+.circular-card:hover {
+  transform: scale(1.2);
+  background: rgba(61, 61, 61, 0.8);
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .circular-card {
+    padding: 1rem 0.5rem;
+  }
+
+  .circular-card img {
+    width: 32px;
+  }
+
+  .circular-card h6 {
+    font-size: 0.9rem;
+  }
+
+  .circular-card small {
+    font-size: 0.75rem;
+  }
+}
+
+#advisory-panel {
+  min-height: 90vh;
+}
+
+@media (max-width: 576px) {
+  #advisory-panel {
+    min-height: auto;
+    padding-bottom: 4rem;
+  }
+}
+
+.gallery-thumb {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-thumb:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+#video-tab-buttons .btn:hover {
+  background-color: #e2e6ea;
+}
+
+#video-tab-buttons .btn.active {
+  background-color: rgba(0,0,0,0.15);
+  color: #000;
+  font-weight: 600;
+}
+
+.venue-image-wrapper {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.venue-image-wrapper img {
+  transition: transform 0.4s ease;
+}
+
+.venue-image-wrapper:hover img {
+  transform: scale(1.05);
+}
+

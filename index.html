@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIBotics Asia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/AIBotics_Favicon.png">
+</head>
+<body id="home">
+  <!-- Top Navbar -->
+  <div class="gradient">
+    <div id="navbar-container" class="fade-in-on-load" style="z-index: 10; position: relative;"></div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="header gradient position-relative overflow-hidden d-flex align-items-center" style="min-height: 91vh;">
+    <!-- Background Neuron Canvas -->
+    <canvas id="neuronCanvas" class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0;"></canvas>
+
+    <!-- Foreground Content -->
+    <div class="container text-center fade-in-on-load" style="z-index: 1; position: relative;">
+      <h1 class="display-4 fw-bold" style="font-size: clamp(2rem, 6vw, 4.2rem);">Connecting Technology to Human Values</h1>
+      <p class="lead" style="font-size: clamp(1.2rem, 4vw, 2.5rem);">— from Learning Tech to Ageing Tech</p>
+    </div>
+  </section>
+
+  <!-- Message Section -->
+  <section id="message" class="py-5 gradient text-white">
+    <div class="container fade-in-up">
+      <div class="row align-items-center">
+        <!-- Image Column -->
+        <div class="col-md-6 text-center mb-4 mb-md-0">
+          <img src="assets/home/Aibotics-President.jpg" alt="Chairperson Photo" class="img-fluid shadow w-100 w-md-auto rounded" style="max-width: 500px;">
+        </div>
+
+        <!-- Text Column -->
+        <div class="col-md-6">
+          <h2 class="mb-4">Message from the Chair</h2>
+          <p>Welcome to AIBotics Asia — where technology meets purpose. Our mission is to bridge the gap between AI, robotics, and the values that define humanity. 
+            Through collaboration, innovation, and ethical focus, we aim to inspire progress that benefits all.</p>
+          <p>Past editions of AIBotics were simply awesome! I had such a good time with “Lovot” at our last onsite event in Singapore. 
+            It was gentle and nice but could not speak human language to me. In our upcoming series of AIBotics, we shall continue to collaborate with our partners in the Asia Pacific Region. </p>
+          <p class="fw-bold">Connecting Technology to Human Values</p>
+          <p class="fw-bold">—from Learning Tech to Ageing Tech</p>
+          <p>Technologies are certainly and increasingly outpacing our ability to deal with them as humans. The fundamental problem is that we are not well trained to be systematic thinkers naturally 
+            (given a choice the larger human community would choose to follow instructions.) Skills of the future is not about attending another workshop or 6-month course, 
+            humans will have to be able to establish critical and rational understanding why a situation happens, and what we want to do about, and then how and if we're not trained to be systematic thinkers, technology will outpace us.
+            Young or old, AIBotics shall have a message for you; join us at our next AIBotics meet-up as we journey on to leverage technology to make us a Better Human! See you at AIBotics soon!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg viewBox="0 0 1440 150" preserveAspectRatio="none" style="display:block;" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="aiboticsGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#d3701f" />
+        <stop offset="100%" stop-color="#c91648" />
+      </linearGradient>
+    </defs>
+    <path d="M0,150 L720,0 L1440,150 L1440,0 L0,0 Z" fill="url(#aiboticsGradient)"></path>
+  </svg>
+
+  <!-- s.WhyAIBotics -->
+  <section id="why-aibotics" class="py-5">
+    <div class="container">
+      <!-- Title -->
+      <div class="row mb-5 text-center">
+        <div class="col">
+          <h2 class="fw-bold" >Why AIBotics?</h2>
+        </div>
+      </div>
+
+      <!-- 3-Column Icon Row -->
+      <div class="row text-center">
+        <!-- Column 1 -->
+        <div class="col-md-4 mb-4 fade-in-up">
+          <div class="mb-3">
+            <img src="assets/home/arrow-spin.svg" alt="Cube Icon" width="75">
+          </div>
+          <p style="font-size: 1.4rem;">AIBotics brings industry leading solutions to a global platform dedicated to demonstrating how advanced technologies can be leveraged to augment human capability and potential.</p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-md-4 mb-4 fade-in-up">
+          <div class="mb-3">
+            <img src="assets/home/microchip.svg" alt="Circular AI Icon" width="75">
+          </div>
+          <p style="font-size: 1.4rem;">This understanding and implementation of AI & Robotics across the wide range of enterprises aim to bring together the most progressive end-users, first-class speakers, and innovative solution providers.</p>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="col-md-4 mb-4 fade-in-up">
+          <div class="mb-3">
+            <img src="assets/home/ticket-simple.svg" alt="Humanoid Icon" width="75">
+          </div>
+          <p style="font-size: 1.4rem;">AIBotics 2023 will be a 2-day convention and exhibition to be held at the Singapore Expo. It carries the theme of “Connecting Technology to Human Values” — from Learning Tech to Ageing Tech.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slideshow Carousel -->
+  <div id="aiboticsCarousel" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="2900">
+    <div class="carousel-inner rounded shadow-sm">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="assets/home/carousel/aib-2019-gallery-3.jpg" class="d-block w-100" alt="Slide 1">
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="assets/home/carousel/aib-2022-gallery-2.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="assets/home/carousel/atx-2024-photo-3.jpeg" class="d-block w-100" alt="Slide 3">
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <img src="assets/home/carousel/atx-2024-photo-5.jpeg" class="d-block w-100" alt="Slide 1">
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="carousel-item">
+        <img src="assets/home/carousel/bct-2024-photo-5.jpeg" class="d-block w-100" alt="Slide 2">
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="carousel-item">
+        <img src="assets/home/carousel/rw-2024-photo-12.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
+      
+      <!-- Slide 7 -->
+      <div class="carousel-item">
+        <img src="assets/home/carousel/aib-2019-gallery-4.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+  </div>
+
+  <!-- Who Should Attend -->
+  <section id="who-should-attend" class="py-5" style="min-height: 600px;">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Who Should Attend</h2>
+        <p class="lead">This will be a unique gathering of experts from all over the world<br>sharing practical solutions and best practices</p>
+      </div>
+
+      <div class="row g-4 text-center justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
+            <img src="assets/home/technologist.svg" alt="Technologists" class="mx-auto mb-2">
+            <h6>Technologists</h6>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
+            <img src="assets/home/investors.svg" alt="Idea Icon"class="mx-auto mb-2">
+            <h6>Investors</h6>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
+            <img src="assets/home/developers.svg" alt="Mesh Icon" class="mx-auto mb-2">
+            <h6>Developers</h6>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
+            <img src="assets/home/product-managers.svg" alt="Human-Robot Icon" class="mx-auto mb-2">
+            <h6>Product Managers</h6>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
+            <img src="assets/home/company-executives.svg" alt="Tools Icon" class="mx-auto mb-2">
+            <h6>Company Executives</h6>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
+            <img src="assets/home/entrepreneurs.svg" alt="Tools Icon" class="mx-auto mb-2">
+            <h6>Entrepreneurs</h6>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
+            <img src="assets/home/policy-makers.svg" alt="Tools Icon" class="mx-auto mb-2">
+            <h6>Policy Makers</h6>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
+            <img src="assets/home/user-community.svg" alt="Tools Icon" class="mx-auto mb-2">
+            <h6>User Community</h6>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-md-4 orbit-card">
+          <div class="card h-100 p-3 border-0">
+            <img src="assets/home/government-regulators.svg" alt="Tools Icon" class="mx-auto mb-2">
+            <h6>Government Regulators</h6>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- s.InternationalAdvisoryPanel -->
+  <section id="advisory-panel" class="py-5 position-relative overflow-hidden d-flex" style="min-height: 100vh;">
+    <!-- Background Neuron Canvas -->
+    <canvas id="neuronCanvas-2" class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0;"></canvas>
+
+    <div class="container text-center" style="z-index: 1; position: relative;">
+      <h2 class="mb-4 text-center fw-bold">International Advisory Panel</h2>
+      <p class="lead text-center">A distinguished panel of international thought leaders driving responsible innovation.</p><br>
+      <div class="text-center mb-4 d-flex flex-wrap justify-content-center gap-2">
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="all">All</button>
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="SINGAPORE">Singapore</button>
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="MALAYSIA">Malaysia</button>
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="PHILIPPINES">Philippines</button>
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="THAILAND">Thailand</button>
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="AUSTRALIA">Australia</button>
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="CHINA">China</button>
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="KOREA">Korea</button>
+      </div>
+
+      <div class="text-center mb-4 d-flex flex-wrap justify-content-center gap-2">
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="NEW_ZEALAND">New Zealand</button>
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="USA">USA</button>
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="HONG_KONG">Hong Kong</button>
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="TAIWAN">Taiwan</button>
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="FINLAND">Finland</button>
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="FRANCE">France</button>
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="ISRAEL">Isreal</button>
+        <button class="btn btn-outline-dark filter-btn me-2 avsbrd" data-country="SPAIN">Spain</button>
+      </div>
+      <br>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 text-center">
+
+        <!-- Panelist Card -->
+        <!-- SINGAPORE -->
+        <div class="col panel-card" data-country="SINGAPORE">
+          <div class="h-120 p-3 text-center circular-card">
+            <img src="assets/home/flags/singapore.svg" alt="Singapore Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">SINGAPORE</h6>
+            <small>Dr Teo Ho Pin</small>
+          </div>
+        </div>
+
+        <div class="col panel-card" data-country="SINGAPORE">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/singapore.svg" alt="Singapore Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">SINGAPORE</h6>
+            <small>Prof Marcelo Ang</small>
+          </div>
+        </div>
+
+        <div class="col panel-card" data-country="SINGAPORE">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/singapore.svg" alt="Singapore Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">SINGAPORE</h6>
+            <small>Prof Alex Siow</small>
+          </div>
+        </div>
+
+        <div class="col panel-card" data-country="SINGAPORE">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/singapore.svg" alt="Singapore Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">SINGAPORE</h6>
+            <small>Mr Oliver Tian</small>
+          </div>
+        </div>
+
+        <!-- INDONESIA -->
+        <div class="col panel-card" data-country="INDONESIA">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/indonesia.svg" alt="Indonesia Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">INDONESIA</h6>
+            <small>Assoc Prof Hadiyanto Said</small>
+          </div>
+        </div>
+
+        <!-- MALAYSIA -->
+        <div class="col panel-card" data-country="MALAYSIA">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/malaysia.svg" alt="Malaysia Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">MALAYSIA</h6>
+            <small>Dr Ishkandar Baharin</small>
+          </div>
+        </div>
+
+        <!-- PHILIPPINES -->
+        <div class="col panel-card" data-country="PHILIPPINES">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/philippines.svg" alt="Philippines Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">PHILIPPINES</h6>
+            <small>Dean Mariciel Teogangco</small>
+          </div>
+        </div>
+
+        <!-- THAILAND -->
+        <div class="col panel-card" data-country="THAILAND">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/thailand.svg" alt="Thailand Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">THAILAND</h6>
+            <small>Assoc Prof Supachai Vongbunyong</small>
+          </div>
+        </div>
+
+        <!-- AUSTRALIA -->
+        <div class="col panel-card" data-country="AUSTRALIA">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/australia.svg" alt="Australia Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">AUSTRALIA</h6>
+            <small>Assoc Prof Catherine Ball</small>
+          </div>
+        </div>
+
+        <!-- CHINA -->
+        <div class="col panel-card" data-country="CHINA">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/china.svg" alt="China Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">CHINA</h6>
+            <small>Prof Zhu Shiqiang</small>
+          </div>
+        </div>
+
+        <!-- KOREA 1 -->
+        <div class="col panel-card" data-country="KOREA">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/korea.svg" alt="Korea Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">KOREA</h6>
+            <small>Kim Changho</small>
+          </div>
+        </div>
+
+        <!-- KOREA 2 -->
+        <div class="col panel-card" data-country="KOREA">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/korea.svg" alt="Korea Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">KOREA</h6>
+            <small>Dr Shon Woong Hee</small>
+          </div>
+        </div>
+
+        <!-- NEW ZEALAND -->
+        <div class="col panel-card" data-country="NEW_ZEALAND">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/new-zealand.svg" alt="NZ Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">NEW ZEALAND</h6>
+            <small>Dr Lim Shen Hin</small>
+          </div>
+        </div>
+
+        <!-- USA -->
+        <div class="col panel-card" data-country="USA">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/usa.svg" alt="USA Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">USA</h6>
+            <small>Dr Alex Dantas</small>
+          </div>
+        </div>
+
+        <!-- HONG KONG -->
+        <div class="col panel-card" data-country="HONG_KONG">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/hong-kong.svg" alt="Hong Kong Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">HONG KONG</h6>
+            <small>Prof Siau Keng</small>
+          </div>
+        </div>
+
+        <!-- TAIWAN -->
+        <div class="col panel-card" data-country="TAIWAN">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/taiwan.svg" alt="Taiwan Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">TAIWAN</h6>
+            <small>Dr Dennis Hu</small>
+          </div>
+        </div>
+
+        <!-- FINLAND -->
+        <div class="col panel-card" data-country="FINLAND">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/finland.svg" alt="Finland Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">FINLAND</h6>
+            <small>Prof Vesa Salminen</small>
+          </div>
+        </div>
+
+        <!-- FRANCE -->
+        <div class="col panel-card" data-country="FRANCE">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/france.svg" alt="France Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">FRANCE</h6>
+            <small>Mr Marco Calcamuggi</small>
+          </div>
+        </div>
+
+        <!-- ISRAEL -->
+        <div class="col panel-card" data-country="ISRAEL">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/israel.svg" alt="Israel Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">ISRAEL</h6>
+            <small>Mr Yosi Lahad</small>
+          </div>
+        </div>
+
+        <!-- SPAIN -->
+        <div class="col panel-card" data-country="SPAIN">
+          <div class="h-120 p-3  text-center circular-card">
+            <img src="assets/home/flags/spain.svg" alt="Spain Flag" width="40" class="mx-auto mb-2">
+            <h6 class="mb-0">SPAIN</h6>
+            <small>Mr Ignacio Secades</small>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- s.Organizers & Partners Graphic -->
+  <section id="organizer-graphic" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center">
+        <img src="assets/navfooter/organizers-graphic.png" alt="Organizers, Supporters, and Partners" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script/script.js"></script>
+
+</body>
+</html>
